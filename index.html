@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana de la Administración Industrial</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.4.4/sweetalert2.css">
+</head>
+<body>
+    <div ng-app="solicitudes" ng-controller="solicitudes">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        
+            <div class="container">
+            <img class="nav-link js-scroll-trigger" src="https://i.ibb.co/JxcVQsQ/SAI.png" style="width: 100px;">
+              <a class="navbar-brand" href="#page-top" style="color: #fff; font-size: medium">Semana de la Administración Industrial</a>
+              <button class="navbar-toggler navbar-toggler-right btn btn-primary" data-toggle="collapse" data-target="#navbarResponsive" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav ml-auto text-uppercase">
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#tematicas">Temáticas</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#ponencias">Ponencias</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#empresas">Empresas</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#equipo">Equipo</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="https://forms.gle/Q2Ffps8hgwpYqQKp8" target="_balnk">Regístrate</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header class="masthead" style="background-image:url('https://i.ibb.co/nCqM6Y1/UPIICSA88.jpg');">
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in"><span>UPIICSA te invita a la:</span></div>
+                    <div class="intro-heading"><span>Primera Semana de la Administración Industrial</span></div>
+                    <div class="intro-lead-in"><span>Del 13 al 17 de Mayo</span></div>
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" data-target="#conocermasModal"  data-toggle="modal" role="button" >Conocer más</a>
+                    
+               </div>
+            </div>
+        </header>
+
+        <section id="tematicas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase section-heading">Temáticas</h2>
+                        <h3 class="text-muted section-subheading">Estos son los temas que se abordarán</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x" style="color:#F3A200"></i><i class="fas fa-hiking fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Emprendimiento</h4>
+                        <p class="text-muted mt-1" style="font-size: small;">Un emprendedor es una persona que diseña, lanza y pone en funcionamiento un negocio.​ El emprendimiento es la capacidad y el deseo de desarrollar, organizar y manejar un negocio junto con sus respectivos riesgos, y con el fin de obtener una ganancia.</p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x "style="color:#F3A200"></i><i class="fas fa-hand-holding-usd fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Finanzas</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">Las finanzas corresponden a una rama de la economía que estudia el movimiento del dinero entre las personas, las empresas o el Estado. También estudia la obtención y la administración del dinero que ellos realizan para lograr sus respectivos objetivos</p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"style="color:#F3A200"></i><i class="fas fa-handshake fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Recursos Humanos</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">Realiza labores de selección, contratación, formación y el empleo de las personas que son necesarias para integrarse en la plantilla y conseguir de esta manera los objetivos fijados.</p>
+                    </div>
+                </div>
+                <div class="row text-center mt-2">
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"style="color:#457FB8"></i><i class="fas fa-city fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Sociedad</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">Personas que se relacionan entre sí, de acuerdo a unas determinadas reglas de organización jurídicas y consuetudinarias, y que comparten una misma cultura o civilización en un espacio o un tiempo determinados.</p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"style="color:#457FB8"></i><i class="fab fa-pagelines fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Medio Ambiente</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">El entorno natural abarca todos los seres vivos y no vivos que ocurren naturalmente</p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"style="color:#457FB8"></i><i class="fas fa-download fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Nuevas Tecnologías</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">Últimos desarrollos tecnológicos y sus aplicaciones (programas, procesos y aplicaciones)</p>
+                    </div>
+                </div>
+                <div class="row text-center mt-2">
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"style="color:#F3A200"></i><i class="far fa-clipboard fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Administración</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">La administración es la ciencia social que tiene por objeto el estudio de las organizaciones y la técnica encargada de la planificación, organización, dirección y control de los recursos de una empresa</p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"style="color:#F3A200"></i><i class="fas fa-bullhorn fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Marketing</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">Es un sistema total de actividades que incluye un conjunto de procesos mediante los cuales, se identifican las necesidades o deseos de los consumidores o clientes para luego satisfacerlos de la mejor manera posible al promover el intercambio de productos y/o servicios de valor con ellos</p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"style="color:#F3A200"></i><i class="fas fa-check fa-stack-1x fa-inverse"></i></span>
+                        <h4 class="section-heading mt-2">Calidad</h4>
+                        <p class="text-muted mt-1"style="font-size: small;">Es aquella cualidad de las cosas que son de excelente creación, fabricación o procedencia, Calidad describe lo que es bueno, por definición, todo lo que es de calidad supone un buen desempeño</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Inicia Ponencias Lunes -->
+        <section id="ponencias" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase section-heading">Ponencias</h2>
+                        <img class="img-fluid" src="https://i.ibb.co/hf9tdHN/lunes13.png" width="95">
+                        <br><br>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://i.ibb.co/R6sMrQG/desojo994.png">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>¿Por qué emprender?</h4>
+                            <p class="text-muted">Desarrollo Social Joven</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal1" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/QMxn06C/empresa-b-buna-1.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>¿Cómo generar impacto en negocios tradicionales?</h4>
+                            <p class="text-muted">BUNA/RAYITO DE LUNA</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal2" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal22" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/QMxn06C/empresa-b-buna-1.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>¿Emprender o emplearte?</h4>
+                            <p class="text-muted">BUNA</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal22" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/BgG6TMp/fondonegro.png" alt="VDS"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>¿Qué es la agilidad y cómo se come?</h4>
+                            <p class="text-muted">Visión Desarrollo y Sistemas México</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal3" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://i.ibb.co/xHv0NTs/1200px-KPMG-svg.png">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Entrevistas Exitosas</h4>
+                            <p class="text-muted">Klynveld Peat Marwick Goerdeler</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal4" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                     
+                    
+                 </div>
+         <!-- Inicia Ponencias Martes -->
+       
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img class="img-fluid" src="https://i.ibb.co/HHdNqjH/martes14.png" width="95">
+                        <br><br>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="http://www.agiletoursyd.org/assets/images/paloit-trans-500x500.png">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Liderazgo al servicio</h4>
+                            <p class="text-muted">Palo It</p>
+                            <a class="btn btn-primary"style="color:#F3A200" role="button" href="#portfolioModal6" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://pbs.twimg.com/profile_images/1063518090263113728/dosBGokE_400x400.jpg">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>¿Qué es la Normalización y cuál es beneficio en la Industria?</h4>
+                            <p class="text-muted">IMNC</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal7" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                     <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="http://www.agiletoursyd.org/assets/images/paloit-trans-500x500.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Liderazgo en redes</h4>
+                            <p class="text-muted">Palo It</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal8" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://pbs.twimg.com/profile_images/1063518090263113728/dosBGokE_400x400.jpg"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Sensibilización para un Sistema de Gestión de Calidad</h4>
+                            <p class="text-muted">IMNC</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal9" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://s20998.pcdn.co/wp-content/uploads/2018/04/Screen-Shot-2018-04-11-at-10.52.25-AM.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Un Café por mi Futuro</h4>
+                            <p class="text-muted">Nestlé</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal10" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://yellowprod-fcd.kxcdn.com/uploads/entry/logo/651/thumb_logo.jpg"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Perfilando el talento Joven</h4>
+                            <p class="text-muted">Manpower</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal11" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                     <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://www.vergemagazine.com/media/com_mtree/images/listings/m/896.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Gira universitaria del emprendimiento Social</h4>
+                            <p class="text-muted">AIESEC</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal12" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    
+                 </div>
+                 
+                 <!-- Inicia Ponencias Jueves -->
+                 <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img class="img-fluid" src="https://i.ibb.co/tXdhqJq/jueves16.png" width="95">
+                        <br><br>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/XtwTkRF/lab.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Emprendimiento social</h4>
+                            <p class="text-muted">Laboratorio Social</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal14" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://0201.nccdn.net/4_2/000/000/024/ec9/CONDUSEF.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Robo de Identidad</h4>
+                            <p class="text-muted">CONDUSEF</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal15" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://0201.nccdn.net/4_2/000/000/024/ec9/CONDUSEF.png">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Inversion</h4>
+                            <p class="text-muted">CONDUSEF</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal16" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                     
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal18" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/d6wPhjr/aero.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Liderazgo y competencias que trascienden</h4>
+                            <p class="text-muted">Club Premier Aeromexico</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal18" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal19" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/xLt6cHM/upiicsa.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Panel Liderazgo de la generación "Y" como la Fza. de México</h4>
+                            <p class="text-muted">Lic. Dassel Ruiz, Claudia Zuñiga, José Luis Vieyra, Oscar Corona, Mónica Hans</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal19" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal20" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/xLt6cHM/upiicsa.png"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>3 Para la felicidad</h4>
+                            <p class="text-muted">Rolando Coronado</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal20" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                   
+                    
+          <!-- Inicia Ponencias Viernes -->
+       
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img class="img-fluid" src="https://i.ibb.co/M9jk8sq/Viernes17.png" width="95">
+                        <br><br>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://0201.nccdn.net/4_2/000/000/024/ec9/CONDUSEF.png">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Inversión</h4>
+                            <p class="text-muted">CONDUSEF</p>
+                            <a class="btn btn-primary"style="color:#F3A200" role="button" href="#portfolioModal21" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal222" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://i.ibb.co/TRg7JxC/google.png">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Trabajo colaborativo empleando las herramientas de Google</h4>
+                            <p class="text-muted">Google</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal222" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item">
+                        <a href="#portfolioModal223" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://i.ibb.co/TRg7JxC/google.png">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Trabajo colaborativo empleando las herramientas de Google</h4>
+                            <p class="text-muted">Google</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModal223" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    
+                 <!-- INICIA Sección Talleres -->
+                 
+                 </div>
+                    <div class="row mt-5">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase section-heading">Talleres  </h2>
+                        <h3 class="section-subheading text-muted"> (Cupo limitado) </h3>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 portfolio-item">
+                       
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/zm920KD/dia-bbva-Upiicsa-1.png" width="500">
+                        <div class="portfolio-caption text-center">
+                            <h4>Día BBVA</h4>
+                            <p class="text-muted">Bancomer</p>
+                            
+                        </div>
+                    </div>
+                
+                <div class="row mb-5">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 portfolio-item">
+                        <a href="#portfolioModalT2" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://i.ibb.co/SPLssVN/holdup-lunes.jpg">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Hold Up | Impacto Socio-ambiental</h4>
+                            <p class="text-muted">By Make Sense</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModalT2" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 portfolio-item">
+                        <a href="#portfolioModalT3" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/bvCyrZ5/happy-hour-lunes.jpg"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Happy Hour</h4>
+                            <p class="text-muted">By Hold Up</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModalT3" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="ol-sm-12 col-md-6 col-lg-6 col-xl-6 portfolio-item">
+                        <a href="#portfolioModalT4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/MgTMR30/holdup-martes.jpg"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Hold Up | Medio ambiente</h4>
+                            <p class="text-muted">By Sense fiction</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModalT4" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="ol-sm-12 col-md-6 col-lg-6 col-xl-6 portfolio-item">
+                        <a href="#portfolioModalT5" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/pbYBB9k/happy-hour-martes.jpg"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Happy Hour</h4>
+                            <p class="text-muted">By Hold Up</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModalT5" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    
+                    <div class="ol-sm-12 col-md-6 col-lg-6 col-xl-6 portfolio-item">
+                        <a href="#portfolioModalT6" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"></div>
+                            </div><img class="img-fluid" src="https://i.ibb.co/0DB21WQ/sensefiction-martes.jpg"></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Sense Fiction</h4>
+                            <p class="text-muted">By Hold Up</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModalT6" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 portfolio-item">
+                        <a href="#portfolioModalT7" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://i.ibb.co/mSLY2fr/holdup-jueves.jpg">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Hold Up | Liderazgo</h4>
+                            <p class="text-muted">By Make Sense</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModalT7" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 portfolio-item">
+                        <a href="#portfolioModalT8" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                </div>
+                                <img class="img-fluid" src="https://i.ibb.co/wyVMPCD/happy-hour-jueves.jpg">
+                            </div></a>
+                        <div class="portfolio-caption text-center">
+                            <h4>Happy Hour</h4>
+                            <p class="text-muted">By Make Sense</p>
+                            <a class="btn btn-primary" role="button" href="#portfolioModalT8" data-toggle="modal"><i class="fa fa-plus text-success"></i> Información</a>
+                        </div>
+                    </div>
+                    
+                 </div>
+                 
+
+            </div>
+          </div>
+       </section>
+       
+        <!-- Termina Seccion Ponencias -->
+        <!-- Termina Sección Talleres -->
+
+        
+        <!-- Comienza Sección Patrocinadores -->
+        <section id="empresas" class="py-5 bg-light">
+          <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase section-heading">Empresas Participantes</h2>
+                        
+                    </div>
+                </div>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-sm-6 col-md-3"><img class="img-fluid d-block mx-auto" src="https://i.ibb.co/1TLGwq7/makesense.png"></div>
+                    <div class="col-sm-6 col-md-3"><img class="img-fluid d-block mx-auto" src="https://i.ibb.co/HxYNn24/aiesec.png"></div>
+                    <div class="col-sm-6 col-md-3"><img class="img-fluid d-block mx-auto" src="https://i.ibb.co/xj8PMq9/logo-bancomer-1024x295.png"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Termina Sección Patrocinadores -->
+        
+        <!-- Empieza Sección EQUIPO -->
+        <section id="equipo">
+            <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase section-heading">Equipo</h2>
+                        <h3 class="section-subheading text-muted">La primera Semana de la Administración Industrial se llevó a cabo gracias al esfuerzo, trabajo y dedicación
+                        de los siguientes alumnos</h3>
+                    </div>
+                </div>
+            <div class="container">
+            
+            <!-- PRIMERA Fila de EQUIPO -->
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-2 col-xs-6 col-sm-6">
+                        <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/RgSP15P/IMG-0640-01.jpg">
+                            <h4>Eduardo</h4>
+                            <p class="text-muted">Finanzas y administración</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-6">
+                        <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/GW4zDPg/IMG-0654-01.jpg">
+                            <h4>Cinthya</h4>
+                            <p class="text-muted">Finanzas y administración</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-6">
+                        <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/cFSc14V/IMG-0659-01-01.jpg">
+                            <h4>Juan Manuel</h4>
+                            <p class="text-muted">Finanzas y administración</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-6">
+                        <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/RgkYPtP/Julio-1.jpg">
+                            <h4>Julio</h4>
+                            <p class="text-muted">Marketing</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-6">
+                        <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/PTyTncv/IMG-0670-01.jpg">
+                            <h4>Daniel Bonola</h4>
+                            <p class="text-muted">Marketing</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/PhjdkVZ/IMG-0682-01.jpg">
+                <h4>Hector</h4>
+                <p class="text-muted">Display</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/8BDZGp0/IMG-0699-01.jpg">
+                <h4>Mariana</h4>
+                <p class="text-muted">Display</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/XZFq6XD/IMG-0715-01.jpg">
+                <h4>Rolando</h4>
+                <p class="text-muted">Logistica</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/frVjJYy/IMG-0753-01.jpg">
+                <h4>Elsy</h4>
+                <p class="text-muted">Patrocinadores</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/JqMv6Hm/IMG-0763-01.jpg">
+                <h4>Karla</h4>
+                <p class="text-muted">Recursos Humanos</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/6n5wkGP/IMG-0821-01.jpg">
+                <h4>Ernesto</h4>
+                <p class="text-muted">Marketing</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/55rBW8T/IMG-0734-01-01.jpg">
+                <h4>Laura</h4>
+                <p class="text-muted">Rally</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/gyBzMw8/IMG-1021-01.jpg">
+                <h4>Ana</h4>
+                <p class="text-muted">Finanzas,Administración y Relaciónes publicas</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/wKxZ0g6/Info-1.jpg">
+                <h4>Antonio Mendoza</h4>
+                <p class="text-muted">Tecnologias de la Información</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/zGLDCxK/Luis-1.jpg">
+                <h4>Luis Bernal</h4>
+                <p class="text-muted">Tecnologias de la Información</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/mTMrtBR/Maciej-1.jpg">
+                <h4>David Maciej</h4>
+                <p class="text-muted">Display</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/PFxQJZS/Sharem-Latuff-1.jpg">
+                <h4>Sharem Latuf</h4>
+                <p class="text-muted">Display</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xs-6 col-sm-6">
+            <div class="team-member"><img class="rounded-circle mx-auto" src="https://i.ibb.co/N3KCnHL/Etna-Urbina-1.jpg">
+                <h4>Etna Urbina</h4>
+                <p class="text-muted">Logistica</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+  <div id="modal78" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p style="text-align: justify;">A bunch of text</p>
+    </div>
+    
+  </div>
+  <!-- Modal Structure -->
+  
+  <!-- Modales Ponencias Lunes-->
+  <!-- Modal Ponencia 1 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>¿Por qué emprender?</h2>
+                                    <p class="item-intro text-muted">Presenta: Gabriel Adalid Muñoz Plata Fundador DESOJO</p>
+                                    <p style="text-align: justify;">Generar un especial interés en el público sobre las razones por las cuales es ideal 
+                                    el emprendimiento para los estudiantes de la Lic. en Administración Industrial</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Lunes 13 de Mayo</li>
+                                        <li>Hora: 13:00 a 14:15</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 1 -->
+
+  <!-- Modal Ponencia 2 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal2">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>¿Cómo generar impacto en negocios tradicionales?</h2>
+                                      <p class="item-intro text-muted">Presenta: Ing. Fernando A. Aguilar Morales</p>
+                                      <p style="text-align: justify;"></p>
+                                      <ul class="list-unstyled">
+                                          <li>Fecha:Lunes 13 de Mayo</li>
+                                          <li>Hora: 10:00 a 11:15</li>
+                                          <li>Auditorio: A</li>
+                                          <li>Duración: 1 hora 15 minutos </li>
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Ponencia 2 -->
+    
+    <!-- Modal Ponencia 2 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal22">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>¿Emprender o emplearte?</h2>
+                                      <p class="item-intro text-muted">Presenta: Lic Enrique Medina</p>
+                                      <p style="text-align: justify;"></p>
+                                      <ul class="list-unstyled">
+                                          <li>Fecha:Lunes 13 de Mayo</li>
+                                          <li>Hora: 11:30 a 12:45</li>
+                                          <li>Auditorio: A</li>
+                                          <li>Duración: 1 hora 15 minutos </li>
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Ponencia 2 -->
+    
+    <!-- Modal Ponencia 3 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal3">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>¿Qué es la agilidad y cómo se come?</h2>
+                                      <p class="item-intro text-muted">Presenta: Ing. Juan Carlos Martínez Valladares</p>
+                                      
+                                      <p style="text-align: justify;">En términos generales les hablaré un poco de agilidad 
+                                      y los frameworks como scrum y como ayudan a la vida diaria y de las empresas, que cosas 
+                                      ha cambiado de unos años para al día de hoy.</p>
+                                      <ul class="list-unstyled">
+                                          <li>Fecha:Lunes 13 de Mayo</li>
+                                          <li>Hora: 16:00 a 17:00</li>
+                                          <li>Auditorio: A</li>
+                                          <li>Duración: 1 hora </li>
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Ponencia 3 -->
+    
+    <!-- Modal Ponencia 4 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal4">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Entrevistas exitosas</h2>
+                                      <p class="item-intro text-muted">Presenta: Lic. Zaid Vargas</p>
+                                      
+                                      <p style="text-align: justify;"></p>
+                                      <ul class="list-unstyled">
+                                          <li>Fecha:Lunes 13 de Mayo</li>
+                                          <li>Hora: 17:15 a 18:45</li>
+                                          <li>Auditorio: A</li>
+                                          <li>Duración: 1 hora 30 minutos </li>
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Ponencia 4 -->
+    
+        <!-- Modal Ponencia 5 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal5">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2 style="font-size: x-large;">Pendiente</h2>
+                                      <p class="item-intro text-muted">Pendiente</p>
+                                      
+                                      <p style="text-align: justify;"></p>
+                                      <ul class="list-unstyled">
+                                          <li>Fecha:Lunes 13 de Mayo</li>
+                                          <li>Hora: 14:30 a 15:45</li>
+                                          <li>Auditorio: A</li>
+                                          <li>Duración: 1 hora 15 minutos </li>
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Ponencia 5 -->
+    <!-- Fin de Ponencias Lunes -->
+    
+  <!-- Modales Ponencias Martes-->
+  <!-- Modal Ponencia 6 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Liderazgo al servicio</h2>
+                                    <p class="item-intro text-muted">Presentan: Ing. Adriana Molina, Ing. Mario Mendez</p>
+                                    <p style="text-align: justify;">El líder para el servicio se considera a sí mismo “el primero entre un grupo de iguales”. 
+                                    Esta idea es el corazón mismo del liderazgo para al servicio. Un líder al servicio no se considera a sí mismo por encima 
+                                    de aquellos que lidera. En cambio, él es primus inter pares que en latín significa, “primero entre iguales”. Es decir, el 
+                                    líder al servicio ve a quienes lidera como compañeros a los cuales enseñar o de los cuales aprender.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Martes 14 de Mayo</li>
+                                        <li>Hora: 10:00 a 11:15</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 6 -->
+  
+    <!-- Modal Ponencia 7 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal7">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>¿Qué es la Normalización y cuál es beneficio en la Industria?</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Jorge Alberto Luna Arce</p>
+                                    <p style="text-align: justify;">La normalización es la determinación de los criterios base con los cuales se 
+                                    realiza el estándar para la medición de productos y procedimientos, que se utilizan en la sociedad actual, y 
+                                    existen entidades que acreditan estos estándares, y con ellos verificar que todas las organizaciones trabajen 
+                                    bajo los mismos para generar una calidad y asegurar la homologación de los productos.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Martes 14 de Mayo</li>
+                                        <li>Hora: 11:30 a 12:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 7 -->
+  
+  <!-- Modal Ponencia 8 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal8">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Liderazgo en redes</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Ulises S. Aguila</p>
+                                    <p style="text-align: justify;">El conocimiento de redes es cada vez más importantes, ya que nos ayudan en tener 
+                                    un mejor entendimiento de nuestra relación con eco-sistemas y con nuevas iniciativas que intentan resolver nuevas 
+                                    problemáticas, con esta charla entenderás lo importante que es volvernos más conscientes y entender cómo podemos 
+                                    colaborar para resolver problemas que son difíciles sin colaboración.Algunas de las preguntas que resuelve esta charla
+                                    ¿Que es una red y como aceleran las iniciativas?, ¿Que componentes básicos tiene un red?, ¿Cuál es el nuevo liderazgo 
+                                    que necesitamos? ¿Qué es el liderazgo de redes?, ¿Cómo se relacionan las redes con equipos?</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Martes 14 de Mayo</li>
+                                        <li>Hora: 13:00 A 14:15</li>
+                                        <li>Auditorio: B</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 8 -->
+  
+   <!-- Modal Ponencia 9 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal9">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Sensibilización para un Sistema de Gestión de Calidad</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Filiberto Rodriguez Ochoa</p>
+                                    <p style="text-align: justify;">Los sistemas de gestión de calidad son cruciales para el aseguramiento de la 
+                                    calidad en los procesos y en los productos que generan las organizaciones, y para su implantación se necesita 
+                                    sensibilizar a todas las áreas involucradas que constituirán el SGC que soportará la empresa. Para esto existen 
+                                    metodologías que facilitan su implantación.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Martes 14 de Mayo</li>
+                                        <li>Hora: 13:00 A 14:15</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 9 -->
+  
+  <!-- Modal Ponencia 10 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal10">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Un Café por mi Futuro</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Blanca Orduño</p>
+                                    <p style="text-align: justify;"></p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Martes 14 de Mayo</li>
+                                        <li>Hora: 14:30 a 15:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos</li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 10 -->
+  
+  <!-- Modal Ponencia 11 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal11">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Perfilando el talento Joven</h2>
+                                    <p class="item-intro text-muted">Presenta: Manpower </p>
+                                    <p style="text-align: justify;">La temática está enfocada en apoyar a los jóvenes a fortalecer 
+                                    su autoestima y que identifiquen y reconozcan sus fortalezas y debilidades para que así puedan 
+                                    elegir qué camino tomar entre trabajar, emprender o seguir estudiando. 
+                                    Dentro de la conferencia se incluyen un par de videos que fortalecen los tips que  se muestran 
+                                    para generar un CV de impacto y lograr la mejor impresión en una entrevista de trabajo. 
+                                    Así como herramientas para emprender su propio negocio. </p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Martes 14 de Mayo</li>
+                                        <li>Hora: 16:00 a 17:15</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos</li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 11 -->
+  
+   <!-- Modal Ponencia 12 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal12">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Gira universitaria del emprendimiento Social</h2>
+                                    <p class="item-intro text-muted">Presentan: José Maximino Ortega Sanabria, Ing. Alejandro Hernández Flores</p>
+                                    <p style="text-align: justify;"></p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha:Martes 14 de Mayo</li>
+                                        <li>Hora: 17:00 a 18:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 45 minutos</li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 12 -->
+  <!-- Fin de Ponencias Martes -->
+  
+  <!-- Modales Ponencias Jueves-->
+  <!-- Modal Ponencia 13 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal13">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Tips para una entrevista laboral</h2>
+                                    <p class="item-intro text-muted">Presentan: Ing. Gallardo</p>
+                                    <p style="text-align: justify;">El líder para el servicio se considera a sí mismo “el primero entre un grupo de iguales”. 
+                                    Esta idea es el corazón mismo del liderazgo para al servicio. Un líder al servicio no se considera a sí mismo por encima 
+                                    de aquellos que lidera. En cambio, él es primus inter pares que en latín significa, “primero entre iguales”. Es decir, el 
+                                    líder al servicio ve a quienes lidera como compañeros a los cuales enseñar o de los cuales aprender.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 10:00 a 11:15</li>
+                                        <li>Auditorio: B</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 13 -->
+  
+  <!-- Modal Ponencia 14 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal14">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Emprendimiento social</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Mario Humberto Nájera González</p>
+                                    <p style="text-align: justify;">El emprendimiento social es una técnica en tendencia de negocios que 
+                                    utilizan las empresas, startups, organizaciones con o sin fines de lucro e incluso gobiernos para 
+                                    financiar el desarrollo de soluciones a los problemas sociales, culturales y ambientales, lo cual 
+                                    hoy en día está en auge y es de importancia de los estudiantes saber de éste modelo de emprendimiento 
+                                    y sus orígenes.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 10:00 a 11:15</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 14 -->
+  
+  <!-- Modal Ponencia 15 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal15">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Robo de identidad</h2>
+                                    <p class="item-intro text-muted">Presenta: Mtra. Libna Sulamit Parra Hdez.</p>
+                                    <p style="text-align: justify;">¿Qué es la identidad? ¿Qué es el robo de identidad? ¿Cómo pueden robar tu identidad?
+                                            <li>Sin acceso a internet</li>
+                                            <li>Sin internet apoyado de herramientas tecnológicas</li>
+                                            <li>Con acceso a internet</li>
+                                         <li>¿Cómo proteger tu identidad?</li>
+                                         <li>Recomendaciones</li>
+                                          
+                                          </p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 11:30 a 12:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 15 -->
+  
+  <!-- Modal Ponencia 16-->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal16">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Inversión</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Libna Sulamit Parra Hernández</p>
+                                    <p style="text-align: justify;">¿Qué es invertir? ¿Para qué me sirve invertir? 
+                                    ¿Qué debo de saber antes de invertir? Perfil de inversionista. Tipos de inversionista. 
+                                    Conceptos económicos relevantes. Mercados bursátiles. Cetes directo.Recomendaciones.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 13:00 a 14:15</li>
+                                        <li>Auditorio: B</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 16 -->
+  
+  <!-- Modal Ponencia 17-->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal17">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Certificación de empresas</h2>
+                                    <p class="item-intro text-muted">Presenta: Ing. Fernando A. Aguilar Morales</p>
+                                    <p style="text-align: justify;"></p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 14:30 a 15:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 17 -->
+  
+  <!-- Modal Ponencia 18-->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal18">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Liderazgo y competencias que trascienden</h2>
+                                    <p class="item-intro text-muted">Presenta: Mtra. Claudia Zúñiga</p>
+                                    <p style="text-align: justify;">Hoy en día se buscan ciertas habilidades y aptitudes en los 
+                                    recién egresados para insertarse en el mercado laboral, en esta conferencia definiremos aquellas 
+                                    cualidades tomando como base el liderazgo de las personas para venderse, y a su trabajo, todas 
+                                    estas son no solamente para empezar a crecer sino que también plantean una trascendencia en el 
+                                    futuro de las organizaciones. </p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 16:30 a 17:30</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora</li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 18 -->
+  
+  <!-- Modal Ponencia 19-->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal19">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Panel Liderazgo de la generación "Y" como la Fza. de México</h2>
+                                    <p class="item-intro text-muted">Presentan: Lic. Dassel Ruiz Espino Claudia Zuñiga, José Luis Vieyra, Oscar Adolfo Corona Amezcua, Mónica Hans</p>
+                                    <p style="text-align: justify;"></p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 17:00 a 18:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 45 minutos</li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 19 -->
+  
+  <!-- Modal Ponencia 20-->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal20">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>3 para la felicidad</h2>
+                                    <p class="item-intro text-muted">Presenta: Rolando Gabriel Coronado Jiménez</p>
+                                    <p style="text-align: justify;"></p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Jueves 16 de Mayo</li>
+                                        <li>Hora: 14:30 a 15:45</li>
+                                        <li>Auditorio: B</li>
+                                        <li>Duración: 1 hora 15 minutos</li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 20 -->
+  
+  <!-- Modales Ponencias Viernes-->
+  <!-- Modal Ponencia 21 -->
+      <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal21">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Inversión</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Libna Sulamit Parra Hernández</p>
+                                    <p style="text-align: justify;">¿Qué es invertir? ¿Para qué me sirve invertir? 
+                                    ¿Qué debo de saber antes de invertir? Perfil de inversionista. Tipos de inversionista. 
+                                    Conceptos económicos relevantes. Mercados bursátiles. Cetes directo.Recomendaciones.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Viernes 17 de Mayo</li>
+                                        <li>Hora: 10:00 a 11:15</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <!-- Modal Ponencia 22 -->
+  <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal222">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Trabajo colaborativo empleando las herramientas de Google</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Gabriel Muñoz Domínguez </p>
+                                    <p style="text-align: justify;">Conferencia tipo taller en la cual se darán a conocer y 
+                                    se enseñará a utilizar las herramientas que hoy en día tiene disponibles Google, para 
+                                    desempeñar actividades de trabajo colaborativo tanto en universidades como en las organizaciones, 
+                                    ya que éstas son tendencia por la facilidad con la que se puede trabajar en ellas.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Viernes 17 de Mayo</li>
+                                        <li>Hora: 11:30 a 12:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 22 -->
+  
+  <!-- Modal Ponencia 23 -->
+  <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal223">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <h2 class>Trabajo colaborativo empleando las herramientas de Google</h2>
+                                    <p class="item-intro text-muted">Presenta: Lic. Gabriel Muñoz Domínguez </p>
+                                    <p style="text-align: justify;">Conferencia tipo taller en la cual se darán a conocer y 
+                                    se enseñará a utilizar las herramientas que hoy en día tiene disponibles Google, para 
+                                    desempeñar actividades de trabajo colaborativo tanto en universidades como en las organizaciones, 
+                                    ya que éstas son tendencia por la facilidad con la que se puede trabajar en ellas.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Fecha: Viernes 17 de Mayo</li>
+                                        <li>Hora: 14:30 a 15:45</li>
+                                        <li>Auditorio: A</li>
+                                        <li>Duración: 1 hora 15 minutos </li>
+                                    </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal Ponencia 23 -->
+    
+    
+    
+    <!-- Inicio de Modales Talleres -->
+    
+    <!-- Modal Taller Bancomer -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT777">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Hold Up</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">Taller creativo guiado por la metodología Design thinking, donde los 
+                                      participantes co-crean una solución innovadora al reto de un emprendedor social.  </p>
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: Mayo 2019 día</li>
+                                          <li>Hora: 04:20</li>
+                                          <li>Auditorio: </li>
+                                          <li>Duración: 2 horas </li>
+                                          <li>Cupo: 15 Peronas </li>
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller Bancomer -->
+    
+    <!-- Modal Taller 1 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT2">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Hold Up | Impacto Social</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">¿Taller creativo guiado por la metodología de Design Thinking, 
+                                      donde los participantes co-crean una solución innovadora a un reto.</p>
+                                      <p style="text-align: justify;"> Temática: ¿Cómo fomentar los proyectos con un enfoque socioambiental 
+                                      en la escuela?</p> 
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: 13 Mayo 2019 </li>
+                                          <li>Hora: 16:30</li>
+                                          <li>Salón 207 Graduados</li>
+                                          
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller 1 -->
+    
+    <!-- Modal Taller 2 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT3">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Happy Hour</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">A través de un juego de mesa diseñado por makesense se dinamiza una 
+                                      conversación para que los participantes entiendan y se informen de problemáticas y se comprometan 
+                                      con una solución personal sobre el tema.</p>
+                                      <p style="text-align: justify;">Temática: La empatía abre puertas</p> 
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: 13 Mayo 2019 </li>
+                                          <li>Hora: 12:30</li>
+                                          <li>Salón 207 Graduados</li>
+                                         
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller 2 -->
+    
+        <!-- Modal Taller 3 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT4">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Hold Up | Medio Ambiente</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">¿Taller creativo guiado por la metodología de Design Thinking, 
+                                      donde los participantes co-crean una solución innovadora a un reto.</p>
+                                      <p style="text-align: justify;"> Temática: ¿Cómo fomentar en los profesores la conciencia ambiental??</p> 
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: 14 Mayo 2019 </li>
+                                          <li>Hora: 10:30</li>
+                                          <li>Salón 207 Graduados</li>
+                                          
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller 3 -->
+    
+     <!-- Modal Taller 4 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT5">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Happy Hour</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">A través de un juego de mesa diseñado por makesense se dinamiza una 
+                                      conversación para que los participantes entiendan y se informen de problemáticas y se comprometan 
+                                      con una solución personal sobre el tema.</p>
+                                      <p style="text-align: justify;">Temática: Mis actividades diarias y su impacto al medio ambiente</p> 
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: 14 Mayo 2019</li>
+                                          <li>Hora: 17:00</li>
+                                          <li>Salón 207 Graduados</li>
+                                         
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller 4 -->
+    
+    <!-- Modal Taller 5 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT6">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Sense Fiction</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">Taller creativo para ciudadanos que tiene como objetivo diseñar 
+                                      nuevos proyectos de empresas que enfrenten retos sociales o ambientales específicos.</p>
+                                      <p style="text-align: justify;">Temática: Acciones para disminuir el impacto ambiental</p> 
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: 14 Mayo 2019</li>
+                                          <li>Hora: 13:00</li>
+                                          <li>Salón 207 Graduados</li>
+                                         
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller 5 -->
+    
+    <!-- Modal Taller 6 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT7">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Hold Up | Liderazgo</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">¿Taller creativo guiado por la metodología de Design Thinking, 
+                                      donde los participantes co-crean una solución innovadora a un reto.</p>
+                                      <p style="text-align: justify;">Temática: ¿Cómo desarrollar el liderazgo y otras competencias en los estudiantes de UPIICSA?</p> 
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: 16 Mayo 2019 </li>
+                                          <li>Hora: 10:30</li>
+                                          <li>Salón 207 Graduados</li>
+                                          
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller 6 -->
+    
+    <!-- Modal Taller 7 -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModalT8">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Happy Hour</h2>
+                                      <p class="item-intro text-muted">By Make Sense</p>
+                                      <p style="text-align: justify;">A través de un juego de mesa diseñado por makesense se dinamiza una 
+                                      conversación para que los participantes entiendan y se informen de problemáticas y se comprometan 
+                                      con una solución personal sobre el tema.</p>
+                                      <p style="text-align: justify;">Temática: ¿Cómo ser un buen lider?</p> 
+                                      <ul class="list-unstyled">
+                                          <li>Fecha: 16 Mayo 2019</li>
+                                          <li>Hora: 12:30</li>
+                                          <li>Salón 207 Graduados</li>
+                                         
+                                      </ul><button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Taller 7 -->
+    
+    <!-- Fin de Modales Talleres -->
+    
+    <!-- INICIA Modales PONENTES -->
+    <!-- Modal Mario Nájera -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal100">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Mario Humberto Nájera Gonzalez</h2>
+                                      <p class="item-intro text-muted">Activista y Fundador de Laboratorio Social MX</p>
+                                      
+                                      <p style="text-align: justify;">Estudió Ciencia Política en la UNAM. Fundador de Laboratorio Social MX, organización que promueve el empleo y la reactivación económica 
+                                      a través de enseñar emprendimiento incluyente en barrios urbanos afectados por la violencia en la Ciudad de México. En 2016 fue seleccionado 
+                                      por el presidente Obama Como uno de los jóvenes Líderes que están transformando latinoamérica.</p>
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Mario Nájera -->
+    
+    <!-- Modal Gabriel Muñoz -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1000">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Gabriel Adalid Muñoz Plata</h2>
+                                      <p class="item-intro text-muted">DESOJO</p>
+                                      <h3>FORMACIÓN ACADÉMICA</h3>
+                                      <ul>
+                                      <li style="text-align: justify;">
+                                      Carrera Profesional Técnico Bachiller en Contaduría Plantel Tlahuac 230.
+Colegio Nacional de Educación Profesional Técnica | 2012 - 2015
+                                      </li>
+                                      <li style="text-align: justify;">
+                                      Licenciatura en Administración
+Universidad Autónoma Metropolitana Unidad Xochimilco | 2015 - actualmente
+                                      </li>
+                                      
+                                      </ul>
+                                      <p style="text-align: justify;">
+Gracias al modelo educativo de la UAM he adquirido habilidades de redacción.
+Cuento con habilidades en investigación de campo que me han permitido el acercamiento a
+organizaciones de impacto social.
+
+</p>
+
+<h3>EXPERIENCIA LABORAL</h3>
+
+<p style="text-align: justify;">Trabajé dando apoyo en el área Administrativa y Contable de las cuatro empresas que conforman el
+grupo TEC-ARM (TEC-ARM, TSA, SPOCSYS y Constructora GM)
+Licenciatura en Administración
+
+Universidad Autónoma Metropolitana Unidad Xochimilco | 2015 - actualmente
+Gracias al modelo educativo de la UAM he adquirido habilidades de redacción.
+
+Cuento con habilidades en investigación de campo que me han permitido el acercamiento a
+organizaciones de impacto social.
+
+He realizado dos investigaciones en organizaciones generadoras de impacto social (MEGAVISIÓN, IAP
+y BUNA empresa con la certifación de sistema B).
+
+</p>
+
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Gabriel Muñoz -->
+    
+    <!-- Modal Adriana Molina -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal101">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Adriana Molina</h2>
+                                      <p class="item-intro text-muted">Palo It</p>
+                                      
+                                      <p style="text-align: justify;">Ing. en Computación con 8 años de experiencia en las áreas de gestión de proyectos, capacitación y entrenamiento a equipos de trabajo, 
+                                      creación de estrategias para adopción de frameworks ágiles, coaching de equipos para la adopción de las prácticas definidas en los marcos 
+                                      de agilidad y acompañamiento en la ejecución de estrategias de transformación.</p>
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Adriana Molina -->
+   
+    <!-- Modal Claudia Zuñiga -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal102">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Claudia Zúñiga Pérez Romero</h2>
+                                      <p class="item-intro text-muted">Club Premier Aeroméxico</p>
+                                      
+                                      <p style="text-align: justify;">Ejecutiva con más de 20 años de experiencia en creación y cambio de Cultura, mejoras en el Clima Organizacional a través de estrategias 
+                                      enfocadas a la productividad y mejoras en condiciones de trabajo de los colaboradores, con enfoque de negocios. Estrategias de alineación 
+                                      de la organización y equipos de trabajo conforme a objetivos estratégicos y modelo de negocio. Negociaciones políticas y de negocios con 
+                                      Sindicato Independencia y altos directivos.</p>
+                                      <br>
+                                      <p style="text-align: justify;">Definición de metodologías de Procesos de Selección, Integración, desarrollo, evaluación y 
+                                      retención de Talento. Diseño de programas de capacitación y desarrollo de Talento. Establecimiento de esquemas económicos de compensación 
+                                      y estructuras organizacionales. Planeación y organización de eventos corporativos para comunicar y alinear la estrategia y filosofía de la 
+                                      compañía. Instructor y facilitador de grupos. Speaker en foros y conferencias en Universidades.</p>
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal  Claudia Zuñiga -->
+    
+    <!-- Modal Gabriel Muñoz -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal103">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Claudia Zúñiga Pérez Romero</h2>
+                                      <p class="item-intro text-muted">Google for education parther Director Nuevos Proyectos Edtechteam</p>
+                                      
+                                      <p style="text-align: justify;">Gabriel se dedica a fomentar la tecnología en la educación desde hace más de 20 años, brindando formación a Profesionales de la educación de 
+                                      México y diversos países de América Latina. Su mayor interés es promover el empoderamiento de los maestros para que se refiera a la tecnología, 
+                                      y desarrollen las habilidades tecnológicas que pueden implementar en sus actividades educativas y vida personal. Actualmente trabaja como Director 
+                                      de Nuevos Proyectos de México en EdTechTeam, el socio de desarrollo profesional de Google para la educación más grande del mundo. Su formación es 
+                                      en Psicología Educativa, cuenta con certificaciones Moodle y Oracle Linux. Implementar y coordinar varias plataformas de educación en línea, incluida 
+                                      la Licenciatura en Educación e Innovación Pedagógica de la UPN.Participa como consultor ayudando a escuelas de América Latina para evaluar sus necesidades 
+                                      de tecnología y desarrollar estrategias para mejorar su enseñanza y prácticas de aprendizaje. Gabriel es Innovador Certificado de Google (2014), así como 
+                                      Entrenador Certificado de Google (2015).</p>
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Gabriel Muñoz-->
+    
+    <!-- Modal Mtra. Libna Sulamit Parra Hernández -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal104">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Mtra. Libna Sulamit Parra Hernández</h2>
+                                      <p class="item-intro text-muted">CONDUSEF</p>
+                                      
+                                      <p style="text-align: justify;">Actuaria, egresada de la Facultad de Ciencias de la Universidad Nacional Autónoma de México (UNAM), cuenta con una maestría en Finanzas Bursátiles en la 
+                                      misma institución, un Posgrado en Finanzas Corporativas y diversos cursos financieros y certificaciones internacionales en idioma inglés y alemán. 
+                                      Fungió como docente en diversas instituciones educativas a nivel primaria, secundaria y preparatoria.
+                                      Desde el año 2010, pertenece a la Dirección General de Educación Financiera dentro de la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (Condusef), 
+                                      donde se desempeña como Subdirectora de Análisis Comparativo de Servicios y Productos Financieros</p>
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Mtra. Libna Sulamit Parra Hernández-->
+    
+    <!-- Modal Ulises Aguila  -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal105">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Ulises Aguila</h2>
+                                      <p class="item-intro text-muted">Palo It</p>
+                                      
+                                      <p style="text-align: justify;">Mi nombre es Ulises Aguila, soy de un pueblo pequeño de Sonora, llamado San Luis R. C., soy ingeniero en electrónica, especialidad en instrumentación y feedback de sistemas de control.
+                                      Estudie en EADA, un MBA hace más de 11 años, he vivido en Barcelona por 6 años, otros 6 en México y nuevamente me voy a Europa en Septiembre.
+                                      He sido profesor de la maestría de Supply Chain por 4 años, soy certificado como Demand Driven Planner de la ISCEA (y otras).</p>
+                                      
+                                      <br>
+                                      <p style="text-align: justify;">También trabajé como trainrt de MIke Beedle en Business Agility, actualmente emprendiendo en el sector de la educación online, con una Universidad Online y una academia de startups y Management 4.0, actualmente ejerce como Agile Coach en organizaciones.
+                                      Me intersan las redes de innovación y la educación, como una forma de unificar la investigación, las escuelas, el sector privado/público y el emprendimiento, creo que los valores, el liderazgo y la capacidad independientemente de la posición que estés, es lo que deben apoyar las Univeridades en México.
+                                      Le interesa enseñar a las personas a crear redes, mapearlas y ayudar a volver más consciente nuestro poder colectivo.</p>
+                                      
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Ulises Aguila -->
+    
+    <!-- Modal Fernando Aguilar  -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal106">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2>Fernando Aguila</h2>
+                                      <p class="item-intro text-muted">BUNA</p>
+                                      
+                                      <p style="text-align: justify;">.</p>
+                                      <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span></button></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal Fernando Aguilar -->
+    <!-- TERMINA Modales PONENTES-->
+    
+    <!-- Modal Conocer mas  -->
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="conocermasModal">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                  <div class="modal-body">
+                                      <h2 style="text-align: -webkit-center;font-size: xx-large;">Semana de la administracion </h2>
+                                      
+                                   <p style="font-family: inherit;text-align: justify;">
+                                   Durante una semana la comunidad estudiantil tendrá la oportunidad de conocer,
+escuchar y sobre todo participar en espacios físicos y virtuales, con expertos y
+empresas destacadas por el trabajo que realizan en las distintas áreas en las que se
+desenvuelven, contribuyendo con el desarrollo de conocimiento de temas
+relacionados con la industria y  la administración para generar un sentido de
+pertenencia en los estudiantes al enfrentarlos con las nuevas tendencias técnicas y
+tecnologías del mercado laboral.
+                                   </p>   
+                                   </div>
+                                   <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Cerrar</span>
+                                      </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Modal conocer mas  -->
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.4/sweetalert2.js"></script>
+</body>
+</html>
